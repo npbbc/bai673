@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - xiaohe
+- name: 🇲🇩 MD 01 - mola
   type: vless
   server: 104.17.169.13
   port: 2053
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇲🇩 MD 01 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇲🇩 MD 01 - mola
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - xiaohe",
-        "🇨🇭 CH 02 - xiaohe",
-        "🇨🇭 CH 03 - xiaohe"
+        "🇨🇭 CH 01 - mola",
+        "🇨🇭 CH 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - xiaohe",
-        "🇨🇭 CH 02 - xiaohe",
-        "🇨🇭 CH 03 - xiaohe"
+        "🇨🇭 CH 01 - mola",
+        "🇨🇭 CH 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
