@@ -19,19 +19,6 @@ proxies:
       Host: netlivpn2950.bbxff.workers.dev
 - name: 🇨🇭 CH 02 - xiaohe
   type: vless
-  server: 185.176.26.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime06.workers.dev
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
   server: 104.18.28.234
   port: 443
   uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
@@ -44,7 +31,7 @@ proxies:
     path: /
     headers:
       Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 CH 04 - xiaohe
+- name: 🇨🇭 CH 03 - xiaohe
   type: vless
   server: 104.21.200.243
   port: 2053
@@ -66,7 +53,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
   - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +61,5 @@ proxy-groups:
   - 🇨🇭 CH 01 - xiaohe
   - 🇨🇭 CH 02 - xiaohe
   - 🇨🇭 CH 03 - xiaohe
-  - 🇨🇭 CH 04 - xiaohe
 rules:
 - MATCH,PROXIES
