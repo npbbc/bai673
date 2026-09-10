@@ -28,10 +28,60 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    path: /?TELEGRAM---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 03 - mola
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 04 - mola
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 05 - mola
+  type: vless
+  server: 172.64.52.24
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 06 - mola
+  type: vless
+  server: 185.216.71.225
+  port: 443
+  uuid: 1af93670-c30e-4207-8458-7a0fc5638e53
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 07 - mola
   type: vless
   server: 185.79.138.71
   port: 448
@@ -51,6 +101,10 @@ proxy-groups:
   - 🇫🇮 FI 01 - mola
   - 🇫🇮 FI 02 - mola
   - 🇫🇮 FI 03 - mola
+  - 🇫🇮 FI 04 - mola
+  - 🇫🇮 FI 05 - mola
+  - 🇫🇮 FI 06 - mola
+  - 🇫🇮 FI 07 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +113,9 @@ proxy-groups:
   - 🇫🇮 FI 01 - mola
   - 🇫🇮 FI 02 - mola
   - 🇫🇮 FI 03 - mola
+  - 🇫🇮 FI 04 - mola
+  - 🇫🇮 FI 05 - mola
+  - 🇫🇮 FI 06 - mola
+  - 🇫🇮 FI 07 - mola
 rules:
 - MATCH,PROXIES

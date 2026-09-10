@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇸 西班牙 (Spain) 01 - mola
+- name: 🇷🇴 RO 01 - mola
   type: ss
-  server: 108.181.121.226
-  port: 8388
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 02 - mola
+- name: 🇷🇴 RO 02 - mola
   type: ss
-  server: 140.174.184.5
-  port: 8388
+  server: 154.46.31.106
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇸 西班牙 (Spain) 01 - mola
-  - 🇪🇸 西班牙 (Spain) 02 - mola
+  - 🇷🇴 RO 01 - mola
+  - 🇷🇴 RO 02 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 (Spain) 01 - mola
-  - 🇪🇸 西班牙 (Spain) 02 - mola
+  - 🇷🇴 RO 01 - mola
+  - 🇷🇴 RO 02 - mola
 rules:
 - MATCH,PROXIES
