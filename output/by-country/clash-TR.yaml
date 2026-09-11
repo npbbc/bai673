@@ -14,16 +14,13 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - mola
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 03 - mola
   type: vless
   server: sinavm.soft10.ir
@@ -38,24 +35,6 @@ proxies:
     path: /assignment----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM----SiNAVM
     headers:
       Host: sinavm.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 04 - mola
-  type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
-- name: 🇹🇷 土耳其 (Turkey) 05 - mola
-  type: vless
-  server: connect3.nyxserver.ir
-  port: 8444
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: connect3.nyxserver.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,8 +43,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mola
   - 🇹🇷 土耳其 (Turkey) 02 - mola
   - 🇹🇷 土耳其 (Turkey) 03 - mola
-  - 🇹🇷 土耳其 (Turkey) 04 - mola
-  - 🇹🇷 土耳其 (Turkey) 05 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,7 +51,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - mola
   - 🇹🇷 土耳其 (Turkey) 02 - mola
   - 🇹🇷 土耳其 (Turkey) 03 - mola
-  - 🇹🇷 土耳其 (Turkey) 04 - mola
-  - 🇹🇷 土耳其 (Turkey) 05 - mola
 rules:
 - MATCH,PROXIES
