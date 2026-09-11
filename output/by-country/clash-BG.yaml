@@ -25,19 +25,6 @@ proxies:
 - name: 🇧🇬 BG 03 - mola
   type: vless
   server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - mola
-  type: vless
-  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -52,7 +39,6 @@ proxy-groups:
   - 🇧🇬 BG 01 - mola
   - 🇧🇬 BG 02 - mola
   - 🇧🇬 BG 03 - mola
-  - 🇧🇬 BG 04 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +47,5 @@ proxy-groups:
   - 🇧🇬 BG 01 - mola
   - 🇧🇬 BG 02 - mola
   - 🇧🇬 BG 03 - mola
-  - 🇧🇬 BG 04 - mola
 rules:
 - MATCH,PROXIES
