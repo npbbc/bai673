@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - mola
   type: vless
-  server: 89.116.180.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime09.workers.dev
-- name: 🇪🇪 EE 02 - mola
-  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -32,13 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 EE 01 - mola
-  - 🇪🇪 EE 02 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 EE 01 - mola
-  - 🇪🇪 EE 02 - mola
 rules:
 - MATCH,PROXIES
