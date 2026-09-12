@@ -6,38 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mola
   type: vmess
-  server: wwafj5lhl6bi8au9.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wwafj5lhl6bi8au9.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: wwafj5lhl6bi8au9.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mola
-  type: vmess
-  server: 47.86.107.119
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
-  type: vmess
   server: ejomsxptp19apygl.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
@@ -52,9 +20,9 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ejomsxptp19apygl.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mola
   type: vmess
-  server: 8.218.184.4
+  server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -62,15 +30,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  servername: ''
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mola
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
   type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+  server: mtckundigepwu3up.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -78,12 +46,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  servername: mtckundigepwu3up.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+      Host: mtckundigepwu3up.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,8 +60,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - mola
   - 🇭🇰 中国香港 (Hong Kong) 02 - mola
   - 🇭🇰 中国香港 (Hong Kong) 03 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 04 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 05 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,7 +68,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - mola
   - 🇭🇰 中国香港 (Hong Kong) 02 - mola
   - 🇭🇰 中国香港 (Hong Kong) 03 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 04 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 05 - mola
 rules:
 - MATCH,PROXIES
