@@ -1,0 +1,113 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - mola
+  type: vless
+  server: 45.130.125.126
+  port: 443
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+- name: 🇨🇿 CZ 02 - mola
+  type: vless
+  server: 172.67.130.144
+  port: 443
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+- name: 🇨🇿 CZ 03 - mola
+  type: vless
+  server: 172.67.214.25
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇨🇿 CZ 04 - mola
+  type: vless
+  server: 66.81.247.155
+  port: 2083
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: testmiKOnIM.HyDrYmhmDamyN7.wOrKers.dEv
+  network: ws
+  ws-opts:
+    path: /OAZko425kNFF0PpQ
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+- name: 🇨🇿 CZ 05 - mola
+  type: vless
+  server: 172.67.174.249
+  port: 443
+  uuid: 26b35808-f1e1-4b97-8c69-46796f058d8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ezaccess-project-9138d4.5f6on.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoicG9pMkt4TDY2TVNtRSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-9138d4.5f6on.workers.dev
+- name: 🇨🇿 CZ 06 - mola
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - mola
+  - 🇨🇿 CZ 02 - mola
+  - 🇨🇿 CZ 03 - mola
+  - 🇨🇿 CZ 04 - mola
+  - 🇨🇿 CZ 05 - mola
+  - 🇨🇿 CZ 06 - mola
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - mola
+  - 🇨🇿 CZ 02 - mola
+  - 🇨🇿 CZ 03 - mola
+  - 🇨🇿 CZ 04 - mola
+  - 🇨🇿 CZ 05 - mola
+  - 🇨🇿 CZ 06 - mola
+rules:
+- MATCH,PROXIES
