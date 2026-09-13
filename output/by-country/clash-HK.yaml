@@ -5,48 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mola
-  type: vless
-  server: 156.224.76.205
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vp10.pages.dev
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: vp10.pages.dev
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - mola
-  type: vless
-  server: 156.224.76.187
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vp10.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /arki
     headers:
-      Host: vp10.pages.dev
+      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
-  type: vless
-  server: 42.200.176.168
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -60,7 +49,35 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: www.pubgmobile.com
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  type: vmess
+  server: nomino.11hi8itbaf.workers.dev
+  port: 443
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nomino.11hi8itbaf.workers.dev
+  network: ws
+  ws-opts:
+    path: /yoga-suggesting-recording-calls.trycloudflare.com/3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: nomino.11hi8itbaf.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mola
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +87,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mola
   - 🇭🇰 中国香港 (Hong Kong) 03 - mola
   - 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,5 +97,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mola
   - 🇭🇰 中国香港 (Hong Kong) 03 - mola
   - 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mola
 rules:
 - MATCH,PROXIES
