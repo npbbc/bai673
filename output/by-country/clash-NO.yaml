@@ -24,6 +24,13 @@ proxies:
   servername: bowandbead.com
   client-fingerprint: qq
 - name: 🇳🇴 NO 03 - mola
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+- name: 🇳🇴 NO 04 - mola
   type: vless
   server: 89.185.81.65
   port: 40443
@@ -34,7 +41,7 @@ proxies:
   reality-opts:
     public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +50,7 @@ proxy-groups:
   - 🇳🇴 NO 01 - mola
   - 🇳🇴 NO 02 - mola
   - 🇳🇴 NO 03 - mola
+  - 🇳🇴 NO 04 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +59,6 @@ proxy-groups:
   - 🇳🇴 NO 01 - mola
   - 🇳🇴 NO 02 - mola
   - 🇳🇴 NO 03 - mola
+  - 🇳🇴 NO 04 - mola
 rules:
 - MATCH,PROXIES

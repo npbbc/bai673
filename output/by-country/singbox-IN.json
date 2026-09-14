@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - mola"
+        "🇮🇳 印度 (India) 01 - mola",
+        "🇮🇳 印度 (India) 02 - mola",
+        "🇮🇳 印度 (India) 03 - mola",
+        "🇮🇳 印度 (India) 04 - mola",
+        "🇮🇳 印度 (India) 05 - mola",
+        "🇮🇳 印度 (India) 06 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - mola"
+        "🇮🇳 印度 (India) 01 - mola",
+        "🇮🇳 印度 (India) 02 - mola",
+        "🇮🇳 印度 (India) 03 - mola",
+        "🇮🇳 印度 (India) 04 - mola",
+        "🇮🇳 印度 (India) 05 - mola",
+        "🇮🇳 印度 (India) 06 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
