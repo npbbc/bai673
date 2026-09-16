@@ -6,97 +6,19 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mola
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  server: 151.242.160.148
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
   network: ws
   ws-opts:
-    path: /snob-ws
+    path: /ws
     headers:
-      Host: cdn.snobvpn.online
+      Host: askuhgfdsg.space.coupons
 - name: 🇦🇪 阿联酋 (UAE) 02 - mola
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - mola
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - mola
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - mola
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - mola
-  type: vless
-  server: 172.67.221.230
-  port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 07 - mola
-  type: vless
-  server: 104.21.67.122
-  port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 08 - mola
   type: vless
   server: 89.125.147.199
   port: 443
@@ -108,7 +30,20 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 09 - mola
+- name: 🇦🇪 阿联酋 (UAE) 03 - mola
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 04 - mola
   type: vless
   server: 89.125.147.199
   port: 443
@@ -120,7 +55,21 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 10 - mola
+- name: 🇦🇪 阿联酋 (UAE) 05 - mola
+  type: vless
+  server: 151.242.160.148
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
+- name: 🇦🇪 阿联酋 (UAE) 06 - mola
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -133,20 +82,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - mola
+- name: 🇦🇪 阿联酋 (UAE) 07 - mola
   type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -159,10 +106,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - mola
   - 🇦🇪 阿联酋 (UAE) 06 - mola
   - 🇦🇪 阿联酋 (UAE) 07 - mola
-  - 🇦🇪 阿联酋 (UAE) 08 - mola
-  - 🇦🇪 阿联酋 (UAE) 09 - mola
-  - 🇦🇪 阿联酋 (UAE) 10 - mola
-  - 🇦🇪 阿联酋 (UAE) 11 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -175,9 +118,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - mola
   - 🇦🇪 阿联酋 (UAE) 06 - mola
   - 🇦🇪 阿联酋 (UAE) 07 - mola
-  - 🇦🇪 阿联酋 (UAE) 08 - mola
-  - 🇦🇪 阿联酋 (UAE) 09 - mola
-  - 🇦🇪 阿联酋 (UAE) 10 - mola
-  - 🇦🇪 阿联酋 (UAE) 11 - mola
 rules:
 - MATCH,PROXIES

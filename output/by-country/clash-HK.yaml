@@ -6,35 +6,67 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mola
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 36.134.35.36
+  port: 50011
+  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - mola
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 47.76.197.72
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: m01c7b2z26dtqgee.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: m01c7b2z26dtqgee.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
+  type: vmess
+  server: 36.133.78.37
+  port: 50011
+  uuid: 1235431b-b6b8-4add-bff4-a6d71bcc4d71
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  type: vmess
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
-    path: ''
+    path: /ws-vmess
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mola
+  type: vmess
+  server: 36.134.35.36
+  port: 50011
+  uuid: 1235431b-b6b8-4add-bff4-a6d71bcc4d71
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - mola
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -49,22 +81,32 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - mola
   type: vmess
-  server: 47.83.19.148
+  server: 36.133.74.15
+  port: 50011
+  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - mola
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  servername: ''
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +116,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mola
   - 🇭🇰 中国香港 (Hong Kong) 03 - mola
   - 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 06 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 07 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 08 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +129,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - mola
   - 🇭🇰 中国香港 (Hong Kong) 03 - mola
   - 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 05 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 06 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 07 - mola
+  - 🇭🇰 中国香港 (Hong Kong) 08 - mola
 rules:
 - MATCH,PROXIES
