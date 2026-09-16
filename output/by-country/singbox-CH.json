@@ -6,16 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - mola",
-        "🇸🇦 SA 02 - mola"
+        "🇨🇭 CH 01 - mola",
+        "🇨🇭 CH 02 - mola",
+        "🇨🇭 CH 03 - mola",
+        "🇨🇭 CH 04 - mola",
+        "🇨🇭 CH 05 - mola",
+        "🇨🇭 CH 06 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - mola",
-        "🇸🇦 SA 02 - mola"
+        "🇨🇭 CH 01 - mola",
+        "🇨🇭 CH 02 - mola",
+        "🇨🇭 CH 03 - mola",
+        "🇨🇭 CH 04 - mola",
+        "🇨🇭 CH 05 - mola",
+        "🇨🇭 CH 06 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
