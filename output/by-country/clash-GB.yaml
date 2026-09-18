@@ -5,72 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - mola
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 129.121.95.159
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 02 - mola
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 03 - mola
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 04 - mola
   type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - mola
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - mola
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - mola
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 02 - mola
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -81,57 +30,8 @@ proxies:
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 08 - mola
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 09 - mola
-  type: ss
-  server: 129.151.83.15
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4HcH2eAbURZ4IN8H4EAgnOWL2suzf7iTJTogK+3MB1o=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - mola
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - mola
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - mola
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - mola
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - mola
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 03 - mola
   type: vless
   server: 91.193.58.117
   port: 443
@@ -145,14 +45,7 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 15 - mola
-  type: ss
-  server: 144.24.225.111
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: xtHPuZw32Ek7q4odOVXoMn+UY9C/IdokDkolQjvdxrk=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 16 - mola
+- name: 🇬🇧 英国 (United Kingdom) 04 - mola
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -163,8 +56,50 @@ proxies:
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 17 - mola
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 05 - mola
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 06 - mola
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 07 - mola
+  type: vless
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 129.121.95.159
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 08 - mola
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -174,7 +109,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 18 - mola
+- name: 🇬🇧 英国 (United Kingdom) 09 - mola
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - mola
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -184,21 +126,28 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 19 - mola
-  type: ss
-  server: 129.151.73.188
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: XXq8087l/F/17nlKDoxF5yHMha+CZIJKCj0UwWf0wRA=
+- name: 🇬🇧 英国 (United Kingdom) 11 - mola
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - mola
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 12 - mola
   type: ss
-  server: 129.151.74.18
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aCeLrNSmYv7M5d0iQTHHhbKVY6Gymx+Tl40NWmuBpEI=
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 21 - mola
+- name: 🇬🇧 英国 (United Kingdom) 13 - mola
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -208,27 +157,35 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 22 - mola
-  type: ss
-  server: 134.65.61.47
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sDhEhHHvZ8tSUziGGDt1rQuh7bgTpUccfw5JnGsAvB4=
+- name: 🇬🇧 英国 (United Kingdom) 14 - mola
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - mola
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - mola
   type: ss
   server: 158.173.221.214
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 24 - mola
-  type: ss
-  server: 144.24.226.249
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: axZ54YHizH8C2/85gqPV+VCC6r0h+nWWGemeypymi2I=
+- name: 🇬🇧 英国 (United Kingdom) 16 - mola
+  type: vless
+  server: 78.129.208.44
+  port: 421
+  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+  servername: chistomat.dry.care
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -250,14 +207,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 14 - mola
   - 🇬🇧 英国 (United Kingdom) 15 - mola
   - 🇬🇧 英国 (United Kingdom) 16 - mola
-  - 🇬🇧 英国 (United Kingdom) 17 - mola
-  - 🇬🇧 英国 (United Kingdom) 18 - mola
-  - 🇬🇧 英国 (United Kingdom) 19 - mola
-  - 🇬🇧 英国 (United Kingdom) 20 - mola
-  - 🇬🇧 英国 (United Kingdom) 21 - mola
-  - 🇬🇧 英国 (United Kingdom) 22 - mola
-  - 🇬🇧 英国 (United Kingdom) 23 - mola
-  - 🇬🇧 英国 (United Kingdom) 24 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -279,13 +228,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 14 - mola
   - 🇬🇧 英国 (United Kingdom) 15 - mola
   - 🇬🇧 英国 (United Kingdom) 16 - mola
-  - 🇬🇧 英国 (United Kingdom) 17 - mola
-  - 🇬🇧 英国 (United Kingdom) 18 - mola
-  - 🇬🇧 英国 (United Kingdom) 19 - mola
-  - 🇬🇧 英国 (United Kingdom) 20 - mola
-  - 🇬🇧 英国 (United Kingdom) 21 - mola
-  - 🇬🇧 英国 (United Kingdom) 22 - mola
-  - 🇬🇧 英国 (United Kingdom) 23 - mola
-  - 🇬🇧 英国 (United Kingdom) 24 - mola
 rules:
 - MATCH,PROXIES
