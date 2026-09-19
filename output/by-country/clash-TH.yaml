@@ -27,22 +27,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: ios
 - name: 🇹🇭 TH 03 - mola
-  type: vless
-  server: 104.18.26.90
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 04 - mola
   type: vless
   server: 34.15.162.1
   port: 443
@@ -54,20 +40,7 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇹🇭 TH 05 - mola
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 06 - mola
+- name: 🇹🇭 TH 04 - mola
   type: vless
   server: 34.15.162.1
   port: 443
@@ -78,8 +51,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇭 TH 07 - mola
+  client-fingerprint: qq
+- name: 🇹🇭 TH 05 - mola
   type: vless
   server: 43.133.110.81
   port: 443
@@ -93,6 +66,30 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇹🇭 TH 06 - mola
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇹🇭 TH 07 - mola
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 - name: 🇹🇭 TH 08 - mola
   type: vless
   server: 34.15.162.1
@@ -107,29 +104,19 @@ proxies:
   client-fingerprint: edge
 - name: 🇹🇭 TH 09 - mola
   type: vless
-  server: 34.15.162.1
+  server: 103.190.178.195
   port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /topic/htm?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 10 - mola
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇭 TH 11 - mola
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -159,7 +146,6 @@ proxy-groups:
   - 🇹🇭 TH 08 - mola
   - 🇹🇭 TH 09 - mola
   - 🇹🇭 TH 10 - mola
-  - 🇹🇭 TH 11 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -175,6 +161,5 @@ proxy-groups:
   - 🇹🇭 TH 08 - mola
   - 🇹🇭 TH 09 - mola
   - 🇹🇭 TH 10 - mola
-  - 🇹🇭 TH 11 - mola
 rules:
 - MATCH,PROXIES
