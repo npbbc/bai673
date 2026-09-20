@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇭 TH 03 - mola
   type: vless
   server: 34.15.162.1
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 04 - mola
   type: vless
   server: 34.15.162.1
@@ -63,7 +63,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 06 - mola
   type: vless
   server: 34.15.162.1
@@ -75,7 +75,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: ios
 - name: 🇹🇭 TH 07 - mola
   type: vless
   server: 34.15.162.1
@@ -87,7 +87,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: safari
 - name: 🇹🇭 TH 08 - mola
   type: vless
   server: 34.15.162.1
@@ -99,7 +99,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: edge
 - name: 🇹🇭 TH 09 - mola
   type: vless
   server: 34.15.162.1
@@ -112,21 +112,6 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 10 - mola
-  type: vmess
-  server: 118.193.57.167
-  port: 49667
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d46bf492
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,7 +126,6 @@ proxy-groups:
   - 🇹🇭 TH 07 - mola
   - 🇹🇭 TH 08 - mola
   - 🇹🇭 TH 09 - mola
-  - 🇹🇭 TH 10 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,6 +140,5 @@ proxy-groups:
   - 🇹🇭 TH 07 - mola
   - 🇹🇭 TH 08 - mola
   - 🇹🇭 TH 09 - mola
-  - 🇹🇭 TH 10 - mola
 rules:
 - MATCH,PROXIES
