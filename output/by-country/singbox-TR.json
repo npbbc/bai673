@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - mola",
-        "🇦🇪 阿联酋 (UAE) 02 - mola"
+        "🇹🇷 土耳其 (Turkey) 01 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - mola",
-        "🇦🇪 阿联酋 (UAE) 02 - mola"
+        "🇹🇷 土耳其 (Turkey) 01 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
