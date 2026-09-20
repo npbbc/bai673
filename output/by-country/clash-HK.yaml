@@ -5,33 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - mola
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - mola
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
   type: vmess
   server: 47.83.19.148
   port: 443
@@ -47,20 +20,55 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - mola
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - mola
   type: vless
-  server: 104.16.60.10
-  port: 443
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hk1.69lover.my
+  servername: 195.58.144.56
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - mola
+  type: vmess
+  server: 47.83.19.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   network: ws
   ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
+    path: /ws-vmess
     headers:
-      Host: hk1.69lover.my
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - mola
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - mola
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - mola
   type: vless
   server: 47.238.210.5
@@ -73,38 +81,6 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - mola
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - mola
-  type: vless
-  server: 195.58.144.56
-  port: 11907
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 195.58.144.56
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - mola
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk1.69lover.my
-  network: ws
-  ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
-    headers:
-      Host: hk1.69lover.my
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,9 +92,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - mola
   - 🇭🇰 中国香港 (Hong Kong) 05 - mola
   - 🇭🇰 中国香港 (Hong Kong) 06 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 07 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 08 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 09 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -130,8 +103,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - mola
   - 🇭🇰 中国香港 (Hong Kong) 05 - mola
   - 🇭🇰 中国香港 (Hong Kong) 06 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 07 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 08 - mola
-  - 🇭🇰 中国香港 (Hong Kong) 09 - mola
 rules:
 - MATCH,PROXIES
