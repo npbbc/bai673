@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA 01 - mola",
-        "🇿🇦 ZA 02 - mola"
+        "🇸🇨 SC 01 - mola",
+        "🇸🇨 SC 02 - mola",
+        "🇸🇨 SC 03 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA 01 - mola",
-        "🇿🇦 ZA 02 - mola"
+        "🇸🇨 SC 01 - mola",
+        "🇸🇨 SC 02 - mola",
+        "🇸🇨 SC 03 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
