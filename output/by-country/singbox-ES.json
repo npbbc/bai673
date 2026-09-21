@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - mola"
+        "🇪🇸 西班牙 (Spain) 01 - mola",
+        "🇪🇸 西班牙 (Spain) 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - mola"
+        "🇪🇸 西班牙 (Spain) 01 - mola",
+        "🇪🇸 西班牙 (Spain) 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
