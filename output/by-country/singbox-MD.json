@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇲🇩 MD 01 - mola",
-        "🇲🇩 MD 02 - mola"
+        "🇲🇩 MD 02 - mola",
+        "🇲🇩 MD 03 - mola",
+        "🇲🇩 MD 04 - mola"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇩 MD 01 - mola",
-        "🇲🇩 MD 02 - mola"
+        "🇲🇩 MD 02 - mola",
+        "🇲🇩 MD 03 - mola",
+        "🇲🇩 MD 04 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
