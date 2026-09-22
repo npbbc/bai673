@@ -4,26 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - mola
+- name: 🇨🇳 CN 01 - mola
   type: vless
-  server: 140.245.102.107
-  port: 119
-  uuid: a5da154b-4632-4fc4-8fcb-9495fe195b1b
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wom.co
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - mola
+  - 🇨🇳 CN 01 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - mola
+  - 🇨🇳 CN 01 - mola
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - mola",
-        "🇭🇺 HU 02 - mola",
-        "🇭🇺 HU 03 - mola"
+        "🇭🇺 HU 01 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - mola",
-        "🇭🇺 HU 02 - mola",
-        "🇭🇺 HU 03 - mola"
+        "🇭🇺 HU 01 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },

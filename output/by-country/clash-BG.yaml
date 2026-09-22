@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - mola
+- name: 🇧🇬 BG 01 - mola
   type: vless
-  server: 38.180.109.174
+  server: 2.56.204.183
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - mola
+  - 🇧🇬 BG 01 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - mola
+  - 🇧🇬 BG 01 - mola
 rules:
 - MATCH,PROXIES
