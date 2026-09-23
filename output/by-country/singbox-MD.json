@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - mola",
-        "🇲🇩 MD 02 - mola",
-        "🇲🇩 MD 03 - mola",
-        "🇲🇩 MD 04 - mola"
+        "🇲🇩 MD 01 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - mola",
-        "🇲🇩 MD 02 - mola",
-        "🇲🇩 MD 03 - mola",
-        "🇲🇩 MD 04 - mola"
+        "🇲🇩 MD 01 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
