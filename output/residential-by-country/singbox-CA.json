@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA 01 - mola",
-        "🇿🇦 ZA 02 - mola"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA 01 - mola",
-        "🇿🇦 ZA 02 - mola"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
