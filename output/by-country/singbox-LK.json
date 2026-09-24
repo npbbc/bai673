@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇴 CO 01 - mola"
+        "🇱🇰 LK 01 - mola",
+        "🇱🇰 LK 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇴 CO 01 - mola"
+        "🇱🇰 LK 01 - mola",
+        "🇱🇰 LK 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
