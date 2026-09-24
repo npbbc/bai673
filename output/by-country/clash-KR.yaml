@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - mola
-  type: vmess
-  server: 140.238.2.250
+  type: vless
+  server: 13.124.169.29
   port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  uuid: c92e12ca-ea66-4785-8675-652b35134117
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: thus-k.netnode.cc.cd
+  network: ws
+  ws-opts:
+    path: /t.me/daily_free_vpn
+    headers:
+      Host: thus-k.netnode.cc.cd
 - name: 🇰🇷 韩国 (South Korea) 02 - mola
   type: vless
   server: 151.245.106.49
@@ -25,7 +29,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 03 - mola
   type: ss
   server: 141.164.45.187
@@ -44,7 +48,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
