@@ -6,14 +6,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - mola"
+        "🇰🇷 韩国 (South Korea) 01 - mola",
+        "🇰🇷 韩国 (South Korea) 02 - mola",
+        "🇰🇷 韩国 (South Korea) 03 - mola",
+        "🇰🇷 韩国 (South Korea) 04 - mola",
+        "🇰🇷 韩国 (South Korea) 05 - mola",
+        "🇰🇷 韩国 (South Korea) 06 - mola",
+        "🇰🇷 韩国 (South Korea) 07 - mola",
+        "🇰🇷 韩国 (South Korea) 08 - mola",
+        "🇰🇷 韩国 (South Korea) 09 - mola",
+        "🇰🇷 韩国 (South Korea) 10 - mola",
+        "🇰🇷 韩国 (South Korea) 11 - mola",
+        "🇰🇷 韩国 (South Korea) 12 - mola",
+        "🇰🇷 韩国 (South Korea) 13 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - mola"
+        "🇰🇷 韩国 (South Korea) 01 - mola",
+        "🇰🇷 韩国 (South Korea) 02 - mola",
+        "🇰🇷 韩国 (South Korea) 03 - mola",
+        "🇰🇷 韩国 (South Korea) 04 - mola",
+        "🇰🇷 韩国 (South Korea) 05 - mola",
+        "🇰🇷 韩国 (South Korea) 06 - mola",
+        "🇰🇷 韩国 (South Korea) 07 - mola",
+        "🇰🇷 韩国 (South Korea) 08 - mola",
+        "🇰🇷 韩国 (South Korea) 09 - mola",
+        "🇰🇷 韩国 (South Korea) 10 - mola",
+        "🇰🇷 韩国 (South Korea) 11 - mola",
+        "🇰🇷 韩国 (South Korea) 12 - mola",
+        "🇰🇷 韩国 (South Korea) 13 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
