@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 CL 01 - mola",
-        "🇨🇱 CL 02 - mola",
-        "🇨🇱 CL 03 - mola",
-        "🇨🇱 CL 04 - mola",
-        "🇨🇱 CL 05 - mola",
-        "🇨🇱 CL 06 - mola"
+        "🇲🇾 MY 01 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 CL 01 - mola",
-        "🇨🇱 CL 02 - mola",
-        "🇨🇱 CL 03 - mola",
-        "🇨🇱 CL 04 - mola",
-        "🇨🇱 CL 05 - mola",
-        "🇨🇱 CL 06 - mola"
+        "🇲🇾 MY 01 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },

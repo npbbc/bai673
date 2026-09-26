@@ -16,14 +16,28 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V3WiGKNQiqOCsT60
+  password: r732TlgjWIjfRcok
   udp: true
 - name: 🇮🇪 IE 03 - mola
   type: ss
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: r732TlgjWIjfRcok
+  password: C8QhmBLJzhKo2JHR
+  udp: true
+- name: 🇮🇪 IE 04 - mola
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: C8QhmBLJzhKo2JHR
+  udp: true
+- name: 🇮🇪 IE 05 - mola
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V3WiGKNQiqOCsT60
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -33,6 +47,8 @@ proxy-groups:
   - 🇮🇪 IE 01 - mola
   - 🇮🇪 IE 02 - mola
   - 🇮🇪 IE 03 - mola
+  - 🇮🇪 IE 04 - mola
+  - 🇮🇪 IE 05 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +57,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - mola
   - 🇮🇪 IE 02 - mola
   - 🇮🇪 IE 03 - mola
+  - 🇮🇪 IE 04 - mola
+  - 🇮🇪 IE 05 - mola
 rules:
 - MATCH,PROXIES
