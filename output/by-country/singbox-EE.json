@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mola",
-        "🇺🇸 美国 (United States) 02 (家宽) - mola",
-        "🇺🇸 美国 (United States) 03 (家宽) - mola"
+        "🇪🇪 EE 01 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mola",
-        "🇺🇸 美国 (United States) 02 (家宽) - mola",
-        "🇺🇸 美国 (United States) 03 (家宽) - mola"
+        "🇪🇪 EE 01 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
