@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - mola"
+        "🇺🇸 美国 (United States) 01 (家宽) - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - mola"
+        "🇺🇸 美国 (United States) 01 (家宽) - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
