@@ -27,6 +27,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - mola
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 - mola
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -46,6 +53,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - mola
   - 🇰🇷 韩国 (South Korea) 02 - mola
   - 🇰🇷 韩国 (South Korea) 03 - mola
+  - 🇰🇷 韩国 (South Korea) 04 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +62,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - mola
   - 🇰🇷 韩国 (South Korea) 02 - mola
   - 🇰🇷 韩国 (South Korea) 03 - mola
+  - 🇰🇷 韩国 (South Korea) 04 - mola
 rules:
 - MATCH,PROXIES
