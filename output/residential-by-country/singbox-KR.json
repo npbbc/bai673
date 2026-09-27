@@ -6,22 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - mola",
-        "🇮🇪 IE 02 - mola",
-        "🇮🇪 IE 03 - mola",
-        "🇮🇪 IE 04 - mola",
-        "🇮🇪 IE 05 - mola"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - mola",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - mola",
-        "🇮🇪 IE 02 - mola",
-        "🇮🇪 IE 03 - mola",
-        "🇮🇪 IE 04 - mola",
-        "🇮🇪 IE 05 - mola"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - mola",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
