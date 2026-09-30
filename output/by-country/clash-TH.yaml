@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - mola
+- name: 🇹🇭 TH 01 - mola
   type: vless
-  server: netra-85a0ca.shoameni19.workers.dev
-  port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
   network: ws
   ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    path: /ws
     headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - mola
+  - 🇹🇭 TH 01 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - mola
+  - 🇹🇭 TH 01 - mola
 rules:
 - MATCH,PROXIES
