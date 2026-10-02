@@ -6,16 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - mola",
-        "🇦🇺 澳大利亚 (Australia) 02 - mola"
+        "🇨🇱 CL 01 - mola",
+        "🇨🇱 CL 02 - mola",
+        "🇨🇱 CL 03 - mola",
+        "🇨🇱 CL 04 - mola",
+        "🇨🇱 CL 05 - mola",
+        "🇨🇱 CL 06 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - mola",
-        "🇦🇺 澳大利亚 (Australia) 02 - mola"
+        "🇨🇱 CL 01 - mola",
+        "🇨🇱 CL 02 - mola",
+        "🇨🇱 CL 03 - mola",
+        "🇨🇱 CL 04 - mola",
+        "🇨🇱 CL 05 - mola",
+        "🇨🇱 CL 06 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
