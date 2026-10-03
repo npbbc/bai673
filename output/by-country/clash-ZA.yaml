@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - mola
   type: ss
-  server: 139.84.247.164
-  port: 8388
+  server: 4.168.234.190
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: SBw5b6E9noHolBdA
   udp: true
 - name: 🇿🇦 ZA 02 - mola
   type: ss
@@ -19,6 +19,13 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 03 - mola
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 04 - mola
   type: vless
   server: 34.35.58.153
   port: 443
@@ -30,19 +37,12 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇿🇦 ZA 04 - mola
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
 - name: 🇿🇦 ZA 05 - mola
   type: ss
-  server: 4.168.234.190
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: SBw5b6E9noHolBdA
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 06 - mola
   type: vless
