@@ -19,12 +19,19 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mola
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mola
   type: vless
   server: fbsv6.guardora.pro
@@ -55,34 +62,6 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 05 - mola
   type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 06 - mola
-  type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 07 - mola
-  type: vless
   server: 217.19.122.200
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
@@ -105,8 +84,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - mola
   - 🇷🇺 俄罗斯 (Russia) 04 - mola
   - 🇷🇺 俄罗斯 (Russia) 05 - mola
-  - 🇷🇺 俄罗斯 (Russia) 06 - mola
-  - 🇷🇺 俄罗斯 (Russia) 07 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,7 +94,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - mola
   - 🇷🇺 俄罗斯 (Russia) 04 - mola
   - 🇷🇺 俄罗斯 (Russia) 05 - mola
-  - 🇷🇺 俄罗斯 (Russia) 06 - mola
-  - 🇷🇺 俄罗斯 (Russia) 07 - mola
 rules:
 - MATCH,PROXIES
