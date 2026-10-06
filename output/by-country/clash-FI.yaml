@@ -15,7 +15,7 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?ed=2056
+    path: /?ed=2056/?TELEGRAM--BYA--CHANEL---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCANfp=firefox
     headers:
       Host: uol258ehdmsohzh.global.ssl.fastly.net
 - name: 🇫🇮 FI 02 - mola
@@ -43,8 +43,29 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 04 - mola
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?ed=2056
+    headers:
+      Host: uol258ehdmsohzh.global.ssl.fastly.net
+- name: 🇫🇮 FI 05 - mola
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 06 - mola
   type: ss
   server: 185.103.110.68
   port: 18283
@@ -60,6 +81,8 @@ proxy-groups:
   - 🇫🇮 FI 02 - mola
   - 🇫🇮 FI 03 - mola
   - 🇫🇮 FI 04 - mola
+  - 🇫🇮 FI 05 - mola
+  - 🇫🇮 FI 06 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +92,7 @@ proxy-groups:
   - 🇫🇮 FI 02 - mola
   - 🇫🇮 FI 03 - mola
   - 🇫🇮 FI 04 - mola
+  - 🇫🇮 FI 05 - mola
+  - 🇫🇮 FI 06 - mola
 rules:
 - MATCH,PROXIES

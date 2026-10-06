@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇴🇲 OM 01 - mola"
+        "🇷🇺 俄罗斯 (Russia) 01 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇴🇲 OM 01 - mola"
+        "🇷🇺 俄罗斯 (Russia) 01 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
