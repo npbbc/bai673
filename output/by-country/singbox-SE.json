@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - mola"
+        "🇸🇪 SE 01 - mola",
+        "🇸🇪 SE 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - mola"
+        "🇸🇪 SE 01 - mola",
+        "🇸🇪 SE 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
