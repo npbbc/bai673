@@ -20,6 +20,84 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇲🇾 MY 02 - mola
   type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 03 - mola
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 04 - mola
+  type: vless
+  server: 45.195.69.230
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 05 - mola
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 06 - mola
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇲🇾 MY 07 - mola
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 08 - mola
+  type: vless
   server: 216.173.67.59
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -29,7 +107,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 proxy-groups:
@@ -39,6 +117,12 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - mola
   - 🇲🇾 MY 02 - mola
+  - 🇲🇾 MY 03 - mola
+  - 🇲🇾 MY 04 - mola
+  - 🇲🇾 MY 05 - mola
+  - 🇲🇾 MY 06 - mola
+  - 🇲🇾 MY 07 - mola
+  - 🇲🇾 MY 08 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +130,11 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - mola
   - 🇲🇾 MY 02 - mola
+  - 🇲🇾 MY 03 - mola
+  - 🇲🇾 MY 04 - mola
+  - 🇲🇾 MY 05 - mola
+  - 🇲🇾 MY 06 - mola
+  - 🇲🇾 MY 07 - mola
+  - 🇲🇾 MY 08 - mola
 rules:
 - MATCH,PROXIES
