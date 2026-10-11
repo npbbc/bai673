@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mola
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: anydesk.com
+  port: 8880
+  uuid: b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: uae.unixzone.us
+      Host: young-dust-b8d9.31-8ba.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - mola
   type: vless
   server: uae.unixzone.us
@@ -32,7 +32,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - mola
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -69,45 +69,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - mola
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - mola
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - mola
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,9 +79,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - mola
   - 🇦🇪 阿联酋 (UAE) 04 - mola
   - 🇦🇪 阿联酋 (UAE) 05 - mola
-  - 🇦🇪 阿联酋 (UAE) 06 - mola
-  - 🇦🇪 阿联酋 (UAE) 07 - mola
-  - 🇦🇪 阿联酋 (UAE) 08 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -131,8 +89,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - mola
   - 🇦🇪 阿联酋 (UAE) 04 - mola
   - 🇦🇪 阿联酋 (UAE) 05 - mola
-  - 🇦🇪 阿联酋 (UAE) 06 - mola
-  - 🇦🇪 阿联酋 (UAE) 07 - mola
-  - 🇦🇪 阿联酋 (UAE) 08 - mola
 rules:
 - MATCH,PROXIES
