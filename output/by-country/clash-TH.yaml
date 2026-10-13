@@ -46,18 +46,17 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇭 TH 05 - mola
   type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: 172.66.214.247
+  port: 8880
+  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /ws
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: v2ray.simspeedup.com
+      Host: sweet-sun-c70f.317-ba5.workers.dev
 - name: 🇹🇭 TH 06 - mola
   type: vless
   server: 103.86.49.57
@@ -72,6 +71,20 @@ proxies:
     headers:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 07 - mola
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 08 - mola
   type: ss
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
@@ -90,6 +103,7 @@ proxy-groups:
   - 🇹🇭 TH 05 - mola
   - 🇹🇭 TH 06 - mola
   - 🇹🇭 TH 07 - mola
+  - 🇹🇭 TH 08 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,5 +116,6 @@ proxy-groups:
   - 🇹🇭 TH 05 - mola
   - 🇹🇭 TH 06 - mola
   - 🇹🇭 TH 07 - mola
+  - 🇹🇭 TH 08 - mola
 rules:
 - MATCH,PROXIES
