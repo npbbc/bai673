@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - mola"
+        "🇺🇦 UA 01 - mola",
+        "🇺🇦 UA 02 - mola",
+        "🇺🇦 UA 03 - mola",
+        "🇺🇦 UA 04 - mola",
+        "🇺🇦 UA 05 - mola",
+        "🇺🇦 UA 06 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - mola"
+        "🇺🇦 UA 01 - mola",
+        "🇺🇦 UA 02 - mola",
+        "🇺🇦 UA 03 - mola",
+        "🇺🇦 UA 04 - mola",
+        "🇺🇦 UA 05 - mola",
+        "🇺🇦 UA 06 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
