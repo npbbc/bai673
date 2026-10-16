@@ -12,7 +12,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.225.89
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - mola
   type: vless
   server: 2.26.225.89
@@ -31,6 +31,51 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 04 - mola
+  type: vless
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: random
+- name: 🇵🇱 PL 05 - mola
+  type: vless
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: random
+- name: 🇵🇱 PL 06 - mola
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 07 - mola
+  type: vless
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +84,10 @@ proxy-groups:
   - 🇵🇱 PL 01 - mola
   - 🇵🇱 PL 02 - mola
   - 🇵🇱 PL 03 - mola
+  - 🇵🇱 PL 04 - mola
+  - 🇵🇱 PL 05 - mola
+  - 🇵🇱 PL 06 - mola
+  - 🇵🇱 PL 07 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +96,9 @@ proxy-groups:
   - 🇵🇱 PL 01 - mola
   - 🇵🇱 PL 02 - mola
   - 🇵🇱 PL 03 - mola
+  - 🇵🇱 PL 04 - mola
+  - 🇵🇱 PL 05 - mola
+  - 🇵🇱 PL 06 - mola
+  - 🇵🇱 PL 07 - mola
 rules:
 - MATCH,PROXIES
