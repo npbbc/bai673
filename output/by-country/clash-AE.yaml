@@ -15,23 +15,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 02 - mola
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - mola
   type: vless
   server: 31.57.190.89
   port: 443
@@ -42,10 +29,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 04 - mola
+- name: 🇦🇪 阿联酋 (UAE) 03 - mola
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -58,20 +45,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - mola
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - mola
+- name: 🇦🇪 阿联酋 (UAE) 04 - mola
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -84,6 +58,32 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - mola
+  type: vless
+  server: 185.253.116.33
+  port: 14430
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 06 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - mola
   type: vless
   server: 31.57.190.89
@@ -95,7 +95,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 08 - mola
@@ -124,6 +124,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - mola
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,6 +151,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - mola
   - 🇦🇪 阿联酋 (UAE) 08 - mola
   - 🇦🇪 阿联酋 (UAE) 09 - mola
+  - 🇦🇪 阿联酋 (UAE) 10 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,5 +166,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - mola
   - 🇦🇪 阿联酋 (UAE) 08 - mola
   - 🇦🇪 阿联酋 (UAE) 09 - mola
+  - 🇦🇪 阿联酋 (UAE) 10 - mola
 rules:
 - MATCH,PROXIES
