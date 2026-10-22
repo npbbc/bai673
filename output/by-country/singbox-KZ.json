@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - mola",
-        "🇮🇷 IR 02 - mola"
+        "🇰🇿 KZ 01 - mola",
+        "🇰🇿 KZ 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - mola",
-        "🇮🇷 IR 02 - mola"
+        "🇰🇿 KZ 01 - mola",
+        "🇰🇿 KZ 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
