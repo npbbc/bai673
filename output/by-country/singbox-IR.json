@@ -6,24 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - mola",
-        "🇵🇭 PH 02 - mola",
-        "🇵🇭 PH 03 - mola",
-        "🇵🇭 PH 04 - mola",
-        "🇵🇭 PH 05 - mola",
-        "🇵🇭 PH 06 - mola"
+        "🇮🇷 IR 01 - mola",
+        "🇮🇷 IR 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - mola",
-        "🇵🇭 PH 02 - mola",
-        "🇵🇭 PH 03 - mola",
-        "🇵🇭 PH 04 - mola",
-        "🇵🇭 PH 05 - mola",
-        "🇵🇭 PH 06 - mola"
+        "🇮🇷 IR 01 - mola",
+        "🇮🇷 IR 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
