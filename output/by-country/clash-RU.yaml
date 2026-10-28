@@ -13,24 +13,10 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mola
   type: ss
-  server: 195.133.5.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - mola
-  type: ss
   server: alb.rvpn.app
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: hTTg7lwQMzpaF7KXpY3A8w
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - mola
-  type: ss
-  server: 91.206.92.238
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -39,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - mola
   - 🇷🇺 俄罗斯 (Russia) 02 - mola
-  - 🇷🇺 俄罗斯 (Russia) 03 - mola
-  - 🇷🇺 俄罗斯 (Russia) 04 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - mola
   - 🇷🇺 俄罗斯 (Russia) 02 - mola
-  - 🇷🇺 俄罗斯 (Russia) 03 - mola
-  - 🇷🇺 俄罗斯 (Russia) 04 - mola
 rules:
 - MATCH,PROXIES
