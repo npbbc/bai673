@@ -51,6 +51,15 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 06 - mola
   type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 07 - mola
+  type: vless
   server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -69,6 +78,7 @@ proxy-groups:
   - 🇮🇩 ID 04 - mola
   - 🇮🇩 ID 05 - mola
   - 🇮🇩 ID 06 - mola
+  - 🇮🇩 ID 07 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +90,6 @@ proxy-groups:
   - 🇮🇩 ID 04 - mola
   - 🇮🇩 ID 05 - mola
   - 🇮🇩 ID 06 - mola
+  - 🇮🇩 ID 07 - mola
 rules:
 - MATCH,PROXIES
