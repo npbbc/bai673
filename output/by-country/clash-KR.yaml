@@ -17,6 +17,52 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 02 - mola
+  type: vmess
+  server: nickgus.cc.cd
+  port: 443
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nickgus.cc.cd
+  network: ws
+  ws-opts:
+    path: /photos
+    headers:
+      Host: nickgus.cc.cd
+- name: 🇰🇷 韩国 (South Korea) 03 - mola
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 - mola
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 05 - mola
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - mola
+  type: vless
+  server: kr002.zestapp778.com
+  port: 37095
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kr002.zestapp778.com
+- name: 🇰🇷 韩国 (South Korea) 07 - mola
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -28,7 +74,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 03 - mola
+- name: 🇰🇷 韩国 (South Korea) 08 - mola
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -40,41 +86,26 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 04 - mola
-  type: vless
-  server: kr002.zestapp778.com
-  port: 37095
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kr002.zestapp778.com
-- name: 🇰🇷 韩国 (South Korea) 05 - mola
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 - mola
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - mola
+- name: 🇰🇷 韩国 (South Korea) 09 - mola
   type: ss
   server: 141.164.45.187
   port: 5498
   cipher: aes-256-gcm
   password: lGqs95QkFHo2NV
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 10 - mola
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +118,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - mola
   - 🇰🇷 韩国 (South Korea) 06 - mola
   - 🇰🇷 韩国 (South Korea) 07 - mola
+  - 🇰🇷 韩国 (South Korea) 08 - mola
+  - 🇰🇷 韩国 (South Korea) 09 - mola
+  - 🇰🇷 韩国 (South Korea) 10 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +133,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - mola
   - 🇰🇷 韩国 (South Korea) 06 - mola
   - 🇰🇷 韩国 (South Korea) 07 - mola
+  - 🇰🇷 韩国 (South Korea) 08 - mola
+  - 🇰🇷 韩国 (South Korea) 09 - mola
+  - 🇰🇷 韩国 (South Korea) 10 - mola
 rules:
 - MATCH,PROXIES
