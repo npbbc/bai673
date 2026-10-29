@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mola"
+        "🇹🇼 中国台湾 (Taiwan) 01 - mola",
+        "🇹🇼 中国台湾 (Taiwan) 02 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - mola"
+        "🇹🇼 中国台湾 (Taiwan) 01 - mola",
+        "🇹🇼 中国台湾 (Taiwan) 02 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
