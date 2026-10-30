@@ -6,20 +6,20 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - mola
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - mola
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -45,17 +45,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - mola
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - mola
   type: vless
   server: uae.unixzone.us
@@ -97,6 +97,19 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 08 - mola
   type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - mola
+  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -108,19 +121,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 09 - mola
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - mola
   type: vless
   server: uae.unixzone.us
@@ -136,7 +136,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 11 - mola
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -149,6 +149,99 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - mola
   type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 13 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - mola
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 15 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 16 - mola
+  type: vmess
+  server: octpus1.gsmonline.ir
+  port: 8080
+  uuid: ea183122-9b4a-4dc3-afe2-adb114e2019d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: snapp.ir
+- name: 🇦🇪 阿联酋 (UAE) 17 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 18 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 19 - mola
+  type: vless
   server: 95.174.68.188
   port: 14430
   uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
@@ -160,6 +253,97 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 20 - mola
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 21 - mola
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 22 - mola
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 23 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 24 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 25 - mola
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 26 - mola
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -177,6 +361,20 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - mola
   - 🇦🇪 阿联酋 (UAE) 11 - mola
   - 🇦🇪 阿联酋 (UAE) 12 - mola
+  - 🇦🇪 阿联酋 (UAE) 13 - mola
+  - 🇦🇪 阿联酋 (UAE) 14 - mola
+  - 🇦🇪 阿联酋 (UAE) 15 - mola
+  - 🇦🇪 阿联酋 (UAE) 16 - mola
+  - 🇦🇪 阿联酋 (UAE) 17 - mola
+  - 🇦🇪 阿联酋 (UAE) 18 - mola
+  - 🇦🇪 阿联酋 (UAE) 19 - mola
+  - 🇦🇪 阿联酋 (UAE) 20 - mola
+  - 🇦🇪 阿联酋 (UAE) 21 - mola
+  - 🇦🇪 阿联酋 (UAE) 22 - mola
+  - 🇦🇪 阿联酋 (UAE) 23 - mola
+  - 🇦🇪 阿联酋 (UAE) 24 - mola
+  - 🇦🇪 阿联酋 (UAE) 25 - mola
+  - 🇦🇪 阿联酋 (UAE) 26 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -194,5 +392,19 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - mola
   - 🇦🇪 阿联酋 (UAE) 11 - mola
   - 🇦🇪 阿联酋 (UAE) 12 - mola
+  - 🇦🇪 阿联酋 (UAE) 13 - mola
+  - 🇦🇪 阿联酋 (UAE) 14 - mola
+  - 🇦🇪 阿联酋 (UAE) 15 - mola
+  - 🇦🇪 阿联酋 (UAE) 16 - mola
+  - 🇦🇪 阿联酋 (UAE) 17 - mola
+  - 🇦🇪 阿联酋 (UAE) 18 - mola
+  - 🇦🇪 阿联酋 (UAE) 19 - mola
+  - 🇦🇪 阿联酋 (UAE) 20 - mola
+  - 🇦🇪 阿联酋 (UAE) 21 - mola
+  - 🇦🇪 阿联酋 (UAE) 22 - mola
+  - 🇦🇪 阿联酋 (UAE) 23 - mola
+  - 🇦🇪 阿联酋 (UAE) 24 - mola
+  - 🇦🇪 阿联酋 (UAE) 25 - mola
+  - 🇦🇪 阿联酋 (UAE) 26 - mola
 rules:
 - MATCH,PROXIES
