@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mola"
+        "🇨🇳 CN 01 - mola",
+        "🇨🇳 CN 02 - mola",
+        "🇨🇳 CN 03 - mola",
+        "🇨🇳 CN 04 - mola",
+        "🇨🇳 CN 05 - mola",
+        "🇨🇳 CN 06 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mola"
+        "🇨🇳 CN 01 - mola",
+        "🇨🇳 CN 02 - mola",
+        "🇨🇳 CN 03 - mola",
+        "🇨🇳 CN 04 - mola",
+        "🇨🇳 CN 05 - mola",
+        "🇨🇳 CN 06 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
