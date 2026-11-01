@@ -46,6 +46,20 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇱🇹 LT 04 - mola
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lorettmay.top
+  network: ws
+  ws-opts:
+    path: /blog/posts
+    headers:
+      Host: lorettmay.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇱🇹 LT 01 - mola
   - 🇱🇹 LT 02 - mola
   - 🇱🇹 LT 03 - mola
+  - 🇱🇹 LT 04 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇱🇹 LT 01 - mola
   - 🇱🇹 LT 02 - mola
   - 🇱🇹 LT 03 - mola
+  - 🇱🇹 LT 04 - mola
 rules:
 - MATCH,PROXIES
