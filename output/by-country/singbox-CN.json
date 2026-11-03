@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇳 CN 01 - mola",
+        "🇨🇳 CN 02 - mola",
+        "🇨🇳 CN 03 - mola",
+        "🇨🇳 CN 04 - mola",
+        "🇨🇳 CN 05 - mola",
+        "🇨🇳 CN 06 - mola",
+        "🇨🇳 CN 07 - mola",
+        "🇨🇳 CN 08 - mola"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇳 CN 01 - mola",
+        "🇨🇳 CN 02 - mola",
+        "🇨🇳 CN 03 - mola",
+        "🇨🇳 CN 04 - mola",
+        "🇨🇳 CN 05 - mola",
+        "🇨🇳 CN 06 - mola",
+        "🇨🇳 CN 07 - mola",
+        "🇨🇳 CN 08 - mola"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
