@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - mola
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - mola
   type: ss
   server: 138.199.55.243
@@ -29,7 +35,7 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 04 - mola
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -38,19 +44,6 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 05 - mola
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 SE 06 - mola
-  type: vless
   server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
@@ -58,6 +51,27 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: se3.shtil.io
+- name: 🇸🇪 SE 06 - mola
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 07 - mola
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +83,7 @@ proxy-groups:
   - 🇸🇪 SE 04 - mola
   - 🇸🇪 SE 05 - mola
   - 🇸🇪 SE 06 - mola
+  - 🇸🇪 SE 07 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +95,6 @@ proxy-groups:
   - 🇸🇪 SE 04 - mola
   - 🇸🇪 SE 05 - mola
   - 🇸🇪 SE 06 - mola
+  - 🇸🇪 SE 07 - mola
 rules:
 - MATCH,PROXIES
