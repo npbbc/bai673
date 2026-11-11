@@ -12,40 +12,42 @@ proxies:
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mola
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  type: vless
+  server: bhjolq0d0l.flowersgood.top
+  port: 443
+  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bhjolq0d0l.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /service/telemetry/045d381f1166/
+    headers:
+      Host: bhjolq0d0l.flowersgood.top
 - name: 🇷🇺 俄罗斯 (Russia) 03 - mola
   type: vless
-  server: 185.178.208.167
+  server: 176.108.245.237
   port: 443
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
+  servername: tfusq-ru-40sb.fade.mom
 - name: 🇷🇺 俄罗斯 (Russia) 04 - mola
   type: vless
-  server: 185.178.208.167
+  server: 188.225.37.175
   port: 443
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mbr.rkn-pediki.site
+  servername: cryptoventura.online
   network: ws
   ws-opts:
-    path: /session
+    path: /api/de3/live
     headers:
-      Host: mbr.rkn-pediki.site
+      Host: cryptoventura.online
 - name: 🇷🇺 俄罗斯 (Russia) 05 - mola
   type: ss
   server: 46.17.47.58
