@@ -5,72 +5,64 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - mola
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
+  type: vless
+  server: 104.27.46.35
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-- name: 🇯🇵 日本 (Japan) 02 - mola
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /tyxyws
     headers:
-      Host: jp01.a0a.xyz
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 02 - mola
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: 🇯🇵 日本 (Japan) 03 - mola
   type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 89.22.224.146
+  port: 43788
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /@Marisa_kristi
     headers:
-      Host: jp3.yohototo.top
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇯🇵 日本 (Japan) 04 - mola
   type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 57.129.130.63
+  port: 52014
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /@Marisa_kristi
     headers:
-      Host: jp3.yohototo.top
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 - name: 🇯🇵 日本 (Japan) 05 - mola
-  type: vless
-  server: 104.19.48.107
+  type: ss
+  server: 84.247.155.196
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 06 - mola
   type: vless
-  server: 188.114.98.0
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -84,8 +76,8 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 07 - mola
   type: vless
-  server: 104.21.70.21
-  port: 443
+  server: 154.31.114.162
+  port: 8443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -97,15 +89,22 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 08 - mola
-  type: ss
-  server: 84.247.155.196
+  type: vless
+  server: 104.19.48.107
   port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 09 - mola
   type: vless
-  server: 172.67.217.240
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -118,15 +117,8 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 10 - mola
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 11 - mola
   type: vless
-  server: 188.114.97.6
+  server: 104.16.10.2
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -135,9 +127,23 @@ proxies:
   servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - mola
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇯🇵 日本 (Japan) 12 - mola
   type: vless
   server: 172.67.217.240
@@ -153,15 +159,23 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 13 - mola
-  type: ss
-  server: 84.247.155.196
+  type: vmess
+  server: 168.138.43.75
   port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
 - name: 🇯🇵 日本 (Japan) 14 - mola
   type: vless
-  server: 104.19.48.107
+  server: 104.16.10.22
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -175,6 +189,62 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 15 - mola
   type: vless
+  server: 57.129.130.57
+  port: 52014
+  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇯🇵 日本 (Japan) 16 - mola
+  type: vless
+  server: 147.45.42.73
+  port: 20443
+  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 (Japan) 17 - mola
+  type: vless
+  server: 5.75.195.83
+  port: 56879
+  uuid: f8847ac2-e586-400f-841b-00081ea4592e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 (Japan) 18 - mola
+  type: vless
+  server: 45.77.241.190
+  port: 8441
+  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇯🇵 日本 (Japan) 19 - mola
+  type: vless
   server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -187,7 +257,211 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - mola
+- name: 🇯🇵 日本 (Japan) 20 - mola
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 21 - mola
+  type: vless
+  server: 57.129.130.200
+  port: 52014
+  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 (Japan) 22 - mola
+  type: vless
+  server: 5.9.117.252
+  port: 4433
+  uuid: ef286b0e-21ed-4e2b-9110-e2ddc7627892
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 (Japan) 23 - mola
+  type: vless
+  server: 54.178.110.17
+  port: 4443
+  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 (Japan) 24 - mola
+  type: vless
+  server: 188.34.142.174
+  port: 444
+  uuid: da46ec1f-84ad-4470-866f-010b58357b19
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 (Japan) 25 - mola
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇯🇵 日本 (Japan) 26 - mola
+  type: vless
+  server: 104.19.164.155
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 27 - mola
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - mola
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 29 - mola
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 30 - mola
+  type: vless
+  server: 203.137.165.164
+  port: 57554
+  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 (Japan) 31 - mola
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 32 - mola
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 33 - mola
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 34 - mola
+  type: vless
+  server: 37.120.222.70
+  port: 8082
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 (Japan) 35 - mola
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 36 - mola
   type: vless
   server: 104.21.219.160
   port: 443
@@ -201,9 +475,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 17 - mola
+- name: 🇯🇵 日本 (Japan) 37 - mola
   type: vless
-  server: 104.16.10.56
+  server: 162.159.228.255
+  port: 443
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇯🇵 日本 (Japan) 38 - mola
+  type: vless
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -215,9 +503,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - mola
+- name: 🇯🇵 日本 (Japan) 39 - mola
   type: vless
-  server: 104.18.42.98
+  server: 152.69.200.216
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -229,21 +517,35 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - mola
+- name: 🇯🇵 日本 (Japan) 40 - mola
   type: vless
-  server: 46.250.254.187
+  server: 104.16.10.185
   port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: fs.qicai99.com
-- name: 🇯🇵 日本 (Japan) 20 - mola
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 41 - mola
+  type: vless
+  server: 57.129.130.10
+  port: 52014
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 (Japan) 42 - mola
   type: vless
   server: 162.159.254.3
   port: 443
@@ -257,7 +559,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - mola
+- name: 🇯🇵 日本 (Japan) 43 - mola
+  type: vless
+  server: 104.19.12.94
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 44 - mola
   type: ss
   server: 154.36.158.197
   port: 8388
@@ -290,6 +606,29 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - mola
   - 🇯🇵 日本 (Japan) 20 - mola
   - 🇯🇵 日本 (Japan) 21 - mola
+  - 🇯🇵 日本 (Japan) 22 - mola
+  - 🇯🇵 日本 (Japan) 23 - mola
+  - 🇯🇵 日本 (Japan) 24 - mola
+  - 🇯🇵 日本 (Japan) 25 - mola
+  - 🇯🇵 日本 (Japan) 26 - mola
+  - 🇯🇵 日本 (Japan) 27 - mola
+  - 🇯🇵 日本 (Japan) 28 - mola
+  - 🇯🇵 日本 (Japan) 29 - mola
+  - 🇯🇵 日本 (Japan) 30 - mola
+  - 🇯🇵 日本 (Japan) 31 - mola
+  - 🇯🇵 日本 (Japan) 32 - mola
+  - 🇯🇵 日本 (Japan) 33 - mola
+  - 🇯🇵 日本 (Japan) 34 - mola
+  - 🇯🇵 日本 (Japan) 35 - mola
+  - 🇯🇵 日本 (Japan) 36 - mola
+  - 🇯🇵 日本 (Japan) 37 - mola
+  - 🇯🇵 日本 (Japan) 38 - mola
+  - 🇯🇵 日本 (Japan) 39 - mola
+  - 🇯🇵 日本 (Japan) 40 - mola
+  - 🇯🇵 日本 (Japan) 41 - mola
+  - 🇯🇵 日本 (Japan) 42 - mola
+  - 🇯🇵 日本 (Japan) 43 - mola
+  - 🇯🇵 日本 (Japan) 44 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -316,5 +655,28 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - mola
   - 🇯🇵 日本 (Japan) 20 - mola
   - 🇯🇵 日本 (Japan) 21 - mola
+  - 🇯🇵 日本 (Japan) 22 - mola
+  - 🇯🇵 日本 (Japan) 23 - mola
+  - 🇯🇵 日本 (Japan) 24 - mola
+  - 🇯🇵 日本 (Japan) 25 - mola
+  - 🇯🇵 日本 (Japan) 26 - mola
+  - 🇯🇵 日本 (Japan) 27 - mola
+  - 🇯🇵 日本 (Japan) 28 - mola
+  - 🇯🇵 日本 (Japan) 29 - mola
+  - 🇯🇵 日本 (Japan) 30 - mola
+  - 🇯🇵 日本 (Japan) 31 - mola
+  - 🇯🇵 日本 (Japan) 32 - mola
+  - 🇯🇵 日本 (Japan) 33 - mola
+  - 🇯🇵 日本 (Japan) 34 - mola
+  - 🇯🇵 日本 (Japan) 35 - mola
+  - 🇯🇵 日本 (Japan) 36 - mola
+  - 🇯🇵 日本 (Japan) 37 - mola
+  - 🇯🇵 日本 (Japan) 38 - mola
+  - 🇯🇵 日本 (Japan) 39 - mola
+  - 🇯🇵 日本 (Japan) 40 - mola
+  - 🇯🇵 日本 (Japan) 41 - mola
+  - 🇯🇵 日本 (Japan) 42 - mola
+  - 🇯🇵 日本 (Japan) 43 - mola
+  - 🇯🇵 日本 (Japan) 44 - mola
 rules:
 - MATCH,PROXIES
