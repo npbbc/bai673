@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 GR 01 - mola"
+        "🇬🇷 GR 01 - mola",
+        "🇬🇷 GR 02 - mola",
+        "🇬🇷 GR 03 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 GR 01 - mola"
+        "🇬🇷 GR 01 - mola",
+        "🇬🇷 GR 02 - mola",
+        "🇬🇷 GR 03 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
