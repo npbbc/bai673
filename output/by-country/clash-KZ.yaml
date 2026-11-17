@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - mola
-  type: vless
-  server: 382218.xyz
-  port: 443
-  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+- name: 🇰🇿 KZ 01 - mola
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 382218.xyz
   network: ws
   ws-opts:
-    path: /ws
+    path: /vmess/
     headers:
-      Host: 382218.xyz
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - mola
+  - 🇰🇿 KZ 01 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - mola
+  - 🇰🇿 KZ 01 - mola
 rules:
 - MATCH,PROXIES
