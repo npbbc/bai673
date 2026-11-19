@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - mola
   type: vless
-  server: 104.17.145.145
+  server: 162.159.237.118
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -33,7 +33,7 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - mola
   type: vless
-  server: 198.202.24.142
+  server: 162.159.160.117
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -61,7 +61,7 @@ proxies:
       Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 05 - mola
   type: vless
-  server: 198.202.24.142
+  server: 104.18.63.135
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true

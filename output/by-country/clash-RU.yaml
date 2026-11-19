@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - mola
   type: vless
-  server: 37.9.4.62
+  server: bookend.filnex.baby
   port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: vP4XeQ-z8LYtkSz1SCAxRMAEPreaHspoXm2nt0okQVw
-  servername: 360.yandex.ru
-  client-fingerprint: firefox
+  servername: hollowreed.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
 - name: 🇷🇺 俄罗斯 (Russia) 02 - mola
   type: ss
   server: 130.49.189.158
