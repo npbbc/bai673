@@ -5,211 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - mola
-  type: vless
-  server: 103.201.130.126
-  port: 443
-  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tt-9nz.pages.dev
-  network: ws
-  ws-opts:
-    path: /item/favourites
-    headers:
-      Host: tt-9nz.pages.dev
-- name: 🇯🇵 日本 (Japan) 02 - mola
-  type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 03 - mola
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 04 - mola
   type: ss
   server: 84.247.155.196
   port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 05 - mola
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 06 - mola
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - mola
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: freeceshi6.frii.site
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: freeceshi6.frii.site
-- name: 🇯🇵 日本 (Japan) 08 - mola
-  type: vless
-  server: 94.177.131.113
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kuruish.org
-- name: 🇯🇵 日本 (Japan) 09 - mola
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - mola
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - mola
-  type: vless
-  server: 104.19.33.25
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 12 - mola
-  type: vless
-  server: 104.27.46.35
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - mola
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 14 - mola
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - mola
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - mola
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 17 - mola
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 18 - mola
+- name: 🇯🇵 日本 (Japan) 02 - mola
   type: vless
   server: 172.64.154.113
   port: 8443
@@ -223,21 +25,42 @@ proxies:
     path: /proxyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: freeceshi6.frii.site
-- name: 🇯🇵 日本 (Japan) 19 - mola
+- name: 🇯🇵 日本 (Japan) 03 - mola
   type: ss
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 20 - mola
+- name: 🇯🇵 日本 (Japan) 04 - mola
   type: ss
   server: 84.247.155.196
   port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 21 - mola
+- name: 🇯🇵 日本 (Japan) 05 - mola
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 06 - mola
+  type: vless
+  server: 103.201.130.126
+  port: 443
+  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tt-9nz.pages.dev
+  network: ws
+  ws-opts:
+    path: /item/favouritesfp=chrome
+    headers:
+      Host: tt-9nz.pages.dev
+- name: 🇯🇵 日本 (Japan) 07 - mola
   type: vless
   server: 94.177.131.113
   port: 443
@@ -246,162 +69,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: kuruish.org
-- name: 🇯🇵 日本 (Japan) 22 - mola
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 23 - mola
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 24 - mola
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - mola
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - mola
-  type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - mola
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 28 - mola
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 29 - mola
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - mola
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 31 - mola
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 32 - mola
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 33 - mola
-  type: vmess
-  server: afzuv.xiaoyan.io
-  port: 16617
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇯🇵 日本 (Japan) 34 - mola
+- name: 🇯🇵 日本 (Japan) 08 - mola
   type: vless
   server: 94.177.131.113
   port: 443
@@ -409,14 +77,84 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 94.177.131.113
-- name: 🇯🇵 日本 (Japan) 35 - mola
+  servername: kuruish.org
+- name: 🇯🇵 日本 (Japan) 09 - mola
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 10 - mola
+  type: vless
+  server: 103.201.130.126
+  port: 443
+  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tt-9nz.pages.dev
+  network: ws
+  ws-opts:
+    path: /item/favourites
+    headers:
+      Host: tt-9nz.pages.dev
+- name: 🇯🇵 日本 (Japan) 11 - mola
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 12 - mola
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🇯🇵 日本 (Japan) 13 - mola
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 14 - mola
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: freeceshi6.frii.site
+- name: 🇯🇵 日本 (Japan) 15 - mola
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 16 - mola
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: freeceshi6.frii.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -438,25 +176,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 14 - mola
   - 🇯🇵 日本 (Japan) 15 - mola
   - 🇯🇵 日本 (Japan) 16 - mola
-  - 🇯🇵 日本 (Japan) 17 - mola
-  - 🇯🇵 日本 (Japan) 18 - mola
-  - 🇯🇵 日本 (Japan) 19 - mola
-  - 🇯🇵 日本 (Japan) 20 - mola
-  - 🇯🇵 日本 (Japan) 21 - mola
-  - 🇯🇵 日本 (Japan) 22 - mola
-  - 🇯🇵 日本 (Japan) 23 - mola
-  - 🇯🇵 日本 (Japan) 24 - mola
-  - 🇯🇵 日本 (Japan) 25 - mola
-  - 🇯🇵 日本 (Japan) 26 - mola
-  - 🇯🇵 日本 (Japan) 27 - mola
-  - 🇯🇵 日本 (Japan) 28 - mola
-  - 🇯🇵 日本 (Japan) 29 - mola
-  - 🇯🇵 日本 (Japan) 30 - mola
-  - 🇯🇵 日本 (Japan) 31 - mola
-  - 🇯🇵 日本 (Japan) 32 - mola
-  - 🇯🇵 日本 (Japan) 33 - mola
-  - 🇯🇵 日本 (Japan) 34 - mola
-  - 🇯🇵 日本 (Japan) 35 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -478,24 +197,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 14 - mola
   - 🇯🇵 日本 (Japan) 15 - mola
   - 🇯🇵 日本 (Japan) 16 - mola
-  - 🇯🇵 日本 (Japan) 17 - mola
-  - 🇯🇵 日本 (Japan) 18 - mola
-  - 🇯🇵 日本 (Japan) 19 - mola
-  - 🇯🇵 日本 (Japan) 20 - mola
-  - 🇯🇵 日本 (Japan) 21 - mola
-  - 🇯🇵 日本 (Japan) 22 - mola
-  - 🇯🇵 日本 (Japan) 23 - mola
-  - 🇯🇵 日本 (Japan) 24 - mola
-  - 🇯🇵 日本 (Japan) 25 - mola
-  - 🇯🇵 日本 (Japan) 26 - mola
-  - 🇯🇵 日本 (Japan) 27 - mola
-  - 🇯🇵 日本 (Japan) 28 - mola
-  - 🇯🇵 日本 (Japan) 29 - mola
-  - 🇯🇵 日本 (Japan) 30 - mola
-  - 🇯🇵 日本 (Japan) 31 - mola
-  - 🇯🇵 日本 (Japan) 32 - mola
-  - 🇯🇵 日本 (Japan) 33 - mola
-  - 🇯🇵 日本 (Japan) 34 - mola
-  - 🇯🇵 日本 (Japan) 35 - mola
 rules:
 - MATCH,PROXIES
