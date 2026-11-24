@@ -14,7 +14,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 02 - mola
   type: vmess
   server: 62.93.166.184
@@ -25,14 +25,18 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 03 - mola
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 04 - mola
   type: vless
   server: 5.178.109.174
@@ -46,6 +50,24 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - mola
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 06 - mola
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +77,8 @@ proxy-groups:
   - 🇸🇪 SE 02 - mola
   - 🇸🇪 SE 03 - mola
   - 🇸🇪 SE 04 - mola
+  - 🇸🇪 SE 05 - mola
+  - 🇸🇪 SE 06 - mola
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +88,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - mola
   - 🇸🇪 SE 03 - mola
   - 🇸🇪 SE 04 - mola
+  - 🇸🇪 SE 05 - mola
+  - 🇸🇪 SE 06 - mola
 rules:
 - MATCH,PROXIES
