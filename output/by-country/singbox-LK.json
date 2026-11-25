@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - mola"
+        "🇱🇰 LK 01 - mola",
+        "🇱🇰 LK 02 - mola",
+        "🇱🇰 LK 03 - mola",
+        "🇱🇰 LK 04 - mola",
+        "🇱🇰 LK 05 - mola"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - mola"
+        "🇱🇰 LK 01 - mola",
+        "🇱🇰 LK 02 - mola",
+        "🇱🇰 LK 03 - mola",
+        "🇱🇰 LK 04 - mola",
+        "🇱🇰 LK 05 - mola"
       ],
       "url": "https://www.google.com/generate_204"
     },
